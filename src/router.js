@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
+import PostShow from "./views/PostShow.vue";
+
 
 
 Vue.use(Router)
@@ -14,6 +16,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/posts/:id',
+      name: 'postShow',
+      component: PostShow
     },
     {
       path: '/signup',
